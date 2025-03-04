@@ -1,17 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const headers = document.querySelectorAll(".experience-header");
+document.querySelectorAll(".experience-header").forEach(button => {
+    button.addEventListener("click", function () {
+        const content = this.nextElementSibling;
+        const isOpen = content.style.display === "block";
 
-    headers.forEach(header => {
-        header.addEventListener("click", function () {
-            // Find the next sibling element (the content box)
-            const content = this.nextElementSibling;
-
-            // Toggle the visibility
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
+        // Close all open sections
+        document.querySelectorAll(".experience-content").forEach(section => {
+            section.style.display = "none";
         });
+
+        // Open the clicked one
+        content.style.display = isOpen ? "none" : "block";
     });
 });

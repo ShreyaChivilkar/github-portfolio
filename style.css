@@ -106,58 +106,80 @@ footer {
     background-color: #005bb5;
 }
 
+/* Work Experience Section */
+/* Work Experience Section */
 #work-experience {
-    padding: 60px 10%;
-    background: #f9f9f9;
     text-align: center;
-}
-
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
+    background: #f9f9f9;
+    padding: 50px 10%;
 }
 
 .experience-container {
-    max-width: 800px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-/* Styling for the collapsible boxes */
+/* Experience Box */
 .experience-box {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+    width: 95%;  /* Further increased width for better alignment */
+    max-width: 1000px; /* Expanded maximum width */
+    border-radius: 12px;
     overflow: hidden;
+    background: white;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Header Styling */
 .experience-header {
     width: 100%;
-    padding: 15px;
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: bold;
     background: #007bff;
-    color: #fff;
+    color: white;
+    font-size: 1.4rem;  /* Increased font size for better readability */
+    font-weight: bold;
+    padding: 20px;  /* Increased padding for a better look */
     border: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns icon and text */
     cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s;
+}
+
+.experience-header i {
+    margin-right: 14px;
+    font-size: 1.5rem;  /* Larger icons */
 }
 
 .experience-header:hover {
     background: #0056b3;
 }
 
-/* Initially hidden */
+/* Content Styling */
 .experience-content {
-    padding: 15px;
-    text-align: left;
-    background: #f1f1f1;
     display: none;
+    padding: 20px;
+    text-align: justify;  /* Added to justify text */
+    font-size: 1.1rem;
+    line-height: 1.6;  /* Better line spacing for readability */
+    margin-top: 10px;  /* Adds space between the sections */
 }
 
-/* This will be toggled via JavaScript */
-.experience-content.active {
-    display: block;
+/* Adding some spacing between bold project names and descriptions */
+.experience-content p {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-left: 20px;  /* Added padding for better alignment */
 }
+
+.experience-content i {
+    color: #007bff;
+    margin-right: 12px;
+    font-size: 1.3rem;
+}
+
+
