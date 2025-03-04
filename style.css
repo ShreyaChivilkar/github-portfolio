@@ -182,4 +182,51 @@ footer {
     font-size: 1.3rem;
 }
 
+/* Extra-Curricular Section */
+#extra-curricular {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.achievements-list {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin-top: 20px;
+}
+
+.achievements-list p {
+    margin: 10px 0;
+}
+
+.achievements-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.achievements-list a:hover {
+    text-decoration: underline;
+}
+
+/* Unwinding Section */
+.unwinding {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.unwinding p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.unwinding-image {
+    margin-top: 20px;
+    width: 35%; /* Reduced size of the image */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 
