@@ -105,3 +105,59 @@ footer {
 .project-link:hover {
     background-color: #005bb5;
 }
+
+#work-experience {
+    padding: 60px 10%;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Styling for the collapsible boxes */
+.experience-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.experience-header {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.experience-header:hover {
+    background: #0056b3;
+}
+
+/* Initially hidden */
+.experience-content {
+    padding: 15px;
+    text-align: left;
+    background: #f1f1f1;
+    display: none;
+}
+
+/* This will be toggled via JavaScript */
+.experience-content.active {
+    display: block;
+}
